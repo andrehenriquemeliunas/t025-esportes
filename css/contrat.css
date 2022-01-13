@@ -6,7 +6,6 @@
     --cor4: #0E4245;
     --bg-main-h2: #b0f6fab2;
     --bg-body: #d0fdff;
-    --color-hr: #85f9ff70;
 
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
     --fonte-destaque: 'Oswald', sans-serif;
@@ -81,49 +80,115 @@ main h1{
     color: var(--cor4);
 }
 
+main h2{
+    font-family: var(--fonte-destaque);
+    margin: 15px 0px 15px 0px;
+    letter-spacing: 0.8px;
+    color: var(--cor4);
+    background-image: linear-gradient(to right, var(--bg-main-h2), transparent);text-indent: 10px;
+    font-size: 1.8em;
+    
+}
+
 main h3{
     font-family: var(--fonte-destaque);
     text-align: center;
-    font-size: 1.1em;
+    font-size: 1.3em;
     letter-spacing: 0.8px;
     font-weight: normal;
     margin-bottom: 20px;
 }
 
-main p.manchete{
-    font-family: var(--fonte-destaque);
-    font-size: 1.1em;
-    letter-spacing: 0.8px;
-    font-weight: normal;
-    margin-top: -10px;
-    padding-left: 10px;
-}
-
-div.not1 > .desc{
-    padding-left: 10px;
-    color: var(--cor1);
-    max-width: 800px;
+main p{
+    text-indent: 10px;
+    line-height: 1.7em;
     text-align: justify;
-    padding-top: 8px;
-    padding-bottom: 17px;
+    margin-top: 40px;
+
 }
 
-span{
+p.mini-lista::before{
+    content: '• ';
+}
+
+main img{
+    display: block;
+    margin: auto;
+    padding: 20px 0px 20px 0px;
+    
+}
+
+main span{
     font-weight: bold;
-}
-
-hr{
-    border-color: var(--color-hr);
-}
-
-img{
-    margin-top: 20px;
-    padding: 8px;
-}
-
-a{
-    text-decoration: none;
     color: var(--cor4);
+}
+
+div.more-news{
+    color: var(--cor4);
+    font-weight: bold;
+    font-size: 1.2em;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+div.more-news:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+aside{
+    background-color: var(--cor0);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.281);
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+aside > h3{
+    background-color: var(--cor1);
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+    font-size: 1.6em;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+aside > div.vermais{
+    text-align: center;
+    padding-top: 8px;
+    height: 25px;
+    width: 106px;
+    margin: auto;
+    border-radius: 10px;
+    border: 1px solid var(--cor4);
+    text-transform: uppercase;
+    font-weight: normal;
+    color: var(--cor4);
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
+
+aside >div.vermais:hover{
+    background-color: var(--bg-body);
+    cursor: pointer;
+    
+}
+
+div.video{
+    padding: 20px;
+    padding-bottom: 57.5%;
+    position: relative;
+}
+
+div.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
 }
 
 footer{
