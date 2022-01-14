@@ -94,9 +94,10 @@ main p.manchete{
     font-family: var(--fonte-destaque);
     font-size: 1.1em;
     letter-spacing: 0.8px;
-    font-weight: normal;
+    font-weight: bold;
     margin-top: -10px;
     padding-left: 10px;
+    color: var(--cor4);
 }
 
 div.not1 > .desc{
